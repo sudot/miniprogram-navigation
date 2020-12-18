@@ -1,0 +1,6 @@
+<!--pages/only-back-text/only-back-text.wxml-->
+<navigation background="bg-gradual-green" home="{{0}}">
+  <view slot="backText">返回</view>
+  <view slot="content">标题</view>
+</navigation>
+<text>只显示返回按钮，并显示返回文字</text>

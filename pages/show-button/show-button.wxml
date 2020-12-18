@@ -1,0 +1,5 @@
+<!--show-button/show-button.wxml-->
+<navigation background="bg-gradual-green">
+  <view slot="content">显示导航按钮</view>
+</navigation>
+<text>显示导航按钮</text>

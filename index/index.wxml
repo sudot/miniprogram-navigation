@@ -1,0 +1,12 @@
+<navigation background="bg-gradual-green">
+  <view slot="content">自定义导航栏</view>
+</navigation>
+<view class="intro">此页面本身也是自定义导航栏，默认情况下并没有页面跳转则不会显示导航按钮。点击下方每一项查看其它演示效果</view>
+<view class="list">
+  <navigator class="item" url="/pages/show-button/show-button" hover-class="none">默认情况发生了页面跳转，显示导航按钮</navigator>
+  <navigator class="item" url="/pages/only-back/only-back" hover-class="none">只显示返回按钮，不显示首页按钮</navigator>
+  <navigator class="item" url="/pages/only-back-text/only-back-text" hover-class="none">只显示返回按钮，并显示返回文字</navigator>
+  <navigator class="item" url="/pages/customization-home/customization-home" hover-class="none">显示返回按钮，并自定义首页按钮</navigator>
+  <navigator class="item" url="/pages/subsidiary/subsidiary" hover-class="none">导航栏辅助区域</navigator>
+  <navigator class="item" url="/pages/search/search" hover-class="none">导航栏变搜索框</navigator>
+</view>

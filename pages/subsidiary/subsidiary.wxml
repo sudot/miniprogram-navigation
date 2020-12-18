@@ -1,0 +1,6 @@
+<!--pages/subsidiary/subsidiary.wxml-->
+<navigation background="bg-gradual-green">
+  <view slot="content">标题</view>
+  <view slot="right">辅助</view>
+</navigation>
+<text>导航栏变辅助区域</text>

@@ -1,0 +1,33 @@
+.intro {
+  margin: 30px;
+  text-align: center;
+}
+
+.list .item {
+  position: relative;
+  display: flex;
+  padding: 0 30rpx;
+  min-height: 100rpx;
+  background-color: #ffffff;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list .item::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 200%;
+  height: 200%;
+  border-bottom: 1rpx solid #ddd;
+  border-radius: inherit;
+  content: " ";
+  transform: scale(.5);
+  transform-origin: 0 0;
+  pointer-events: none
+}
+
+.list .item:last-child:after {
+  border: none
+}

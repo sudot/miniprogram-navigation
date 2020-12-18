@@ -1,0 +1,103 @@
+/* components/navigation/navigation.wxss */
+.navigation {
+  display: block;
+  position: relative;
+}
+
+.navigation .navigation-bar {
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  box-shadow: 0rpx 0rpx 0rpx;
+  min-height: 0px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* 若是使用了背景图片,则下面的样式就会有用了 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navigation .navigation-bar .action {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  max-width: 100%;
+}
+
+.navigation .navigation-bar .border {
+  position: relative;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 1000rpx;
+  height: 30px;
+}
+
+.navigation .navigation-bar .border::before {
+  content: " ";
+  width: 1rpx;
+  height: 110%;
+  position: absolute;
+  top: 22.5%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: scale(0.5);
+  transform-origin: 0 0;
+  pointer-events: none;
+  box-sizing: border-box;
+  opacity: 0.6;
+  background-color: #ffffff;
+}
+
+.navigation .navigation-bar .border text {
+  display: block;
+  flex: 1;
+  margin: auto !important;
+  text-align: center;
+  font-size: 34rpx;
+}
+
+.navigation .navigation-bar .content {
+  position: absolute;
+  text-align: center;
+  width: calc(100% - 440rpx);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  height: 60rpx;
+  font-size: 32rpx;
+  line-height: 60rpx;
+  cursor: none;
+  pointer-events: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.navigation .navigation-bar .right {
+  font-size: 24rpx;
+  margin-right: 210rpx;
+}
+
+.navigation [class*="navigation-icon-"] {
+  font-family: "navigationfont" !important;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "navigationfont";
+  src: url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAMYAAsAAAAABuAAAALLAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqBRIE/ATYCJAMMCwgABCAFhG0HORsIBhHVk5lkf4BMbvUDEhpQU+keO+IyfcH7d4rQDx/z3D1ABFRAAgAAAAAEEdlR1TOzezAjWU8gh+J39hFjhlAI7/6vaQmMSbvNHsmqjT3qo+QDvn8ZCTsNFAA8b7v3t2hmoYbYJRJswC3mkz7oAd5TpKnsUubLvANOhj61Sd7uP5/ncnoT6EBW37Ic17Cxx/OjXoBxQAHtjVFbtEAC8obpjUgecXUaArgTLZPUXLf0sMIAJgkgi9TcSVZWFIPJCq4I9sRKgxzDwlXtV09GcJR/Xz6PsuIKCksDZnbMqZ3h9J2ntznbRihBDIRwvQVoIBMYkLHJ7ABTJOM07ubZcqWNQVBXJRyHq1ur/dE/ngKxAfWeAKSGOQXvxEoIvGsNCgANgG3ni0BtxAa+RhD/1MXvwfS1PUR8H7y6LbDH09uubJxz7UBq/3Hu/GkPD3X5Qe724HWRi/cO3gkbbcujcT0STXqeDfnfJ+DreG9Z4PpKmLEUGN6KN1K8X652O7Eu77Xi18Di2euiPviclPXZ56SPr/eLE+tg/qYyqhkBztWLqW+SRz+exnrsb7hr3eFxn5Jvq60B4NVXhWMcDDoWcP2tT8AbNRubTKsDNm1qNVb3fk3qBreCsMEdcASC/t4etwZtToPgaukO+F2IaqBxJZE0bCYsPMiBjSvlcCdD/XoPAqxgihg3IN3uAIKv21B48wgaX09Jw76BRbCvsPGNhjt9ErCjB8mB1eYiYcPYQ/sGqguekIM3ovEWxZNtkqnj/COmQSWgzAq3cIMe0xVzhmdRMRNQCg6ug/PQ2gAxBY0dZ5I5HvKcpq6UdcGNNi4SNow9tG+guuCJtufN4PO3KJ5skxZkG9VHTIPqHsqs2EDemP0m2a9cMjyLipmAUnBwHQxDawPE6WEaO87kgXQ85LAVbTVnz1ud/3bAAAd3Kp1ldprOrGRwSMra0QgA') format('woff2');
+}
+
+.navigation-icon-back:before {
+  content: "\e679";
+}
+
+.navigation-icon-homefill:before {
+  content: "\e6bb";
+}

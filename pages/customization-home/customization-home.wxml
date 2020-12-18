@@ -1,0 +1,6 @@
+<!--pages/customization-home/customization-home.wxml-->
+<navigation background="bg-gradual-green" home="{{1}}">
+  <text slot="home" class="iconfont icon-menu" bindtap="onMenu"></text>
+  <view slot="content">自定义首页按钮</view>
+</navigation>
+<text>显示返回按钮，并自定义首页按钮</text>

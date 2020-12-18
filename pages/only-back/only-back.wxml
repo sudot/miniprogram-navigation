@@ -1,0 +1,5 @@
+<!--pages/only-back/only-back.wxml-->
+<navigation background="bg-gradual-green" home="{{0}}">
+  <view slot="content">标题</view>
+</navigation>
+<text>只显示返回按钮，不显示首页按钮</text>

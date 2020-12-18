@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "index/index",
+    "pages/show-button/show-button",
+    "pages/only-back/only-back",
+    "pages/customization-home/customization-home",
+    "pages/search/search",
+    "pages/subsidiary/subsidiary",
+    "pages/only-back-text/only-back-text"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "white",
+    "navigationStyle": "custom"
+  },
+  "usingComponents": {
+    "navigation": "/components/navigation/navigation"
+  },
+  "sitemapLocation": "sitemap.json"
+}

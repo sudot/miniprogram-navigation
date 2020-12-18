@@ -1,0 +1,25 @@
+<!--components/navigation/navigation.wxml-->
+<view class="navigation" style="height:{{barHeight}}px">
+  <view class="navigation-bar {{background}}" style="height:{{barHeight - bar.top}}px;padding-top:{{bar.top}}px;">
+    <view class="action border" wx:if="{{showHome}}"
+      style="width:{{showBack ? bar.width : (bar.width / 2)}}px;height:{{bar.height}}px;margin-left:calc(750rpx - {{bar.right}}px)">
+      <text class="navigation-icon-back" bindtap="onBack" wx:if="{{showBack}}"></text>
+      <text class="navigation-icon-homefill" bindtap="onHome" wx:if="{{showHome && home === -1}}"></text>
+      <slot name="home" wx:if="{{showHome && home === 1}}"></slot>
+    </view>
+    <view class="action" bindtap="onBack" wx:elif="{{showBack}}"
+      style="height:{{bar.height}}px;margin-left:calc(750rpx - {{bar.right}}px)">
+      <text class="navigation-icon-back"></text>
+      <!-- 自定义返回按钮文字 -->
+      <slot name="backText"></slot>
+    </view>
+    <view class="content" style="top:{{bar.top}}px">
+      <!-- 自定义标题内容 -->
+      <slot name="content"></slot>
+    </view>
+    <!-- 自定义靠右对齐的内容 -->
+    <view class="right">
+      <slot name="right"></slot>
+    </view>
+  </view>
+</view>
