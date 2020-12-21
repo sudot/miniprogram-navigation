@@ -1,5 +1,5 @@
 <!--pages/search/search.wxml-->
-<navigation background="bg-gradual-green" is-back="{{false}}" home="{{0}}">
+<navigation background="bg-gradual-green" back="{{false}}" home="{{false}}">
   <view slot="right">
     <view class="search">
       <view class="search-form round">

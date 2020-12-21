@@ -18,14 +18,14 @@ Component({
       value: ''
     },
     // 是否显示返回按钮
-    isBack: {
+    back: {
       type: Boolean,
       value: true
     },
-    // 主页按钮显示模式 -1:默认样式,0:不显示,1:自定义样式
+    // 主页按钮显示模式 null:默认样式,false:不显示,true:自定义样式
     home: {
-      type: Number,
-      value: -1
+      type: Boolean,
+      value: null
     },
   },
   /**
@@ -55,12 +55,10 @@ Component({
   lifetimes: {
     attached() {
       // 在组件实例进入页面节点树时执行
-      if (getCurrentPages().length <= 1) {
-        return
-      }
+      const multiPages = getCurrentPages().length > 1
       this.setData({
-        showBack: this.data.isBack,
-        showHome: this.data.home !== 0
+        showBack: this.data.back && multiPages,
+        showHome: this.data.home !== false
       })
     },
     detached() {

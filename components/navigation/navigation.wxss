@@ -12,7 +12,6 @@
   min-height: 0px;
 
   display: flex;
-  align-items: center;
   justify-content: space-between;
 
   /* 若是使用了背景图片,则下面的样式就会有用了 */
@@ -49,7 +48,7 @@
   pointer-events: none;
   box-sizing: border-box;
   opacity: 0.6;
-  background-color: #ffffff;
+  background-color: rgb(255, 255, 255, 0.3);
 }
 
 .navigation .navigation-bar .border text {
@@ -81,7 +80,7 @@
 
 .navigation .navigation-bar .right {
   font-size: 24rpx;
-  margin-right: 210rpx;
+  margin: auto 210rpx auto 0;
 }
 
 .navigation [class*="navigation-icon-"] {

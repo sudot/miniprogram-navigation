@@ -1,4 +1,4 @@
-<navigation background="bg-gradual-green">
+<navigation background="bg-gradual-green" home="{{false}}">
   <view slot="content">自定义导航栏</view>
 </navigation>
 <view class="intro">此页面本身也是自定义导航栏，默认情况下并没有页面跳转则不会显示导航按钮。点击下方每一项查看其它演示效果</view>

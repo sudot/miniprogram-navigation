@@ -1,11 +1,12 @@
 <!--components/navigation/navigation.wxml-->
 <view class="navigation" style="height:{{barHeight}}px">
+  <!-- 在实际项目中 navigation-bar 的 style 可能需要设置为 style="height:{{barHeight}}px;padding-top:{{bar.top}}px;" 才会正常显示 -->
   <view class="navigation-bar {{background}}" style="height:{{barHeight - bar.top}}px;padding-top:{{bar.top}}px;">
     <view class="action border" wx:if="{{showHome}}"
       style="width:{{showBack ? bar.width : (bar.width / 2)}}px;height:{{bar.height}}px;margin-left:calc(750rpx - {{bar.right}}px)">
       <text class="navigation-icon-back" bindtap="onBack" wx:if="{{showBack}}"></text>
-      <text class="navigation-icon-homefill" bindtap="onHome" wx:if="{{showHome && home === -1}}"></text>
-      <slot name="home" wx:if="{{showHome && home === 1}}"></slot>
+      <text class="navigation-icon-homefill" bindtap="onHome" wx:if="{{showHome && home === null}}"></text>
+      <slot name="home" wx:if="{{showHome && home === true}}"></slot>
     </view>
     <view class="action" bindtap="onBack" wx:elif="{{showBack}}"
       style="height:{{bar.height}}px;margin-left:calc(750rpx - {{bar.right}}px)">

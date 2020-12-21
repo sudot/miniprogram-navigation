@@ -1,6 +1,11 @@
 # 微信小程序自定义导航
 
-小程序代码片段：https://developers.weixin.qq.com/s/gQhFKGmR7Lmq
+## 小程序代码片段
+
+| 修改日期   | 分享链接                                        |
+| ---------- | ----------------------------------------------- |
+| 2020-12-21 | https://developers.weixin.qq.com/s/7H70QLm475mS |
+| 2020-12-18 | https://developers.weixin.qq.com/s/gQhFKGmR7Lmq |
 
 ## 示例图片
 
